@@ -17,6 +17,9 @@ Tile_inference.ipynb to see the plantCLEF 2025 quandrat prediction
 
 ## Other model trained:
 ### 1. BioCLIP-2 + LoRA Fine-tuning
+
+**Location**: `bioclip-2/`
+
 LoRA (Low-Rank Adaptation) fine-tuning on [BioCLIP 2](https://huggingface.co/imageomics/bioclip-2) for biological organism classification.
 
 **Key Features:**
