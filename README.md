@@ -36,10 +36,41 @@ bash train_with_your_data.sh
 
 For detailed documentation, see [bioclip-2/README.md](bioclip-2/README.md)
 
-### 2. SigLIP2 + MLP probing
+### 2. DINOv2 + Linear/MLP Classification
+
+**Location**: `DINOv2-linear-mlp/`
+
+Frozen DINOv2 backbone with lightweight classification heads (Linear and MLP) for plant species classification.
+
+**Key Features:**
+- **Backbone**: DINOv2 ViT-B/14 (frozen, pretrained)
+- **Linear Head**: ~75K trainable parameters
+- **MLP Head**: ~1M trainable parameters
+- **Training**: 5 epochs, Cross-Entropy Loss, Adam optimizer
+
+**Quick Start:**
+```bash
+cd DINOv2-linear-mlp
+pip install -r requirements.txt
+python infer_dinov2_head.py \
+    --img examples/example_1.jpg \
+    --species-ids DINOv2/dataset/species_ids.csv \
+    --checkpoint DINOv2/checkpoint/model_best.pth.tar \
+    --head-pth outputs/dino_linear_head.pth \
+    --head-type linear
+```
+
+**Model Downloads:**
+- [DINOv2 Backbone Checkpoint](https://drive.google.com/file/d/1FSI1YFiub6rrEfV9cruGdgWFBAyrbsm5/view?usp=sharing)
+- [Linear Head](https://drive.google.com/file/d/1tNieT3O7WUsXRFA9r4bGndvzGnEhdjeL/view?usp=sharing)
+- [MLP Head](https://drive.google.com/file/d/1-F6FjfVUxikmlmU6zD0RxF5SXr6gMAVA/view?usp=sharing)
+
+For detailed documentation, see [`DINOv2-linear-mlp/README.md`](DINOv2-linear-mlp/README.md).
+
+### 3. SigLIP2 + MLP probing
  training code: sigLIP2_mlp/finetune_sigCLIP2.ipynb
  trained checkpoints: <https://drive.google.com/file/d/1zuLxk9dsFKf10aijMNFi2PCHAs0uTcim/view?usp=sharing>
-### 3. SigLIP2 + LORA
+### 4. SigLIP2 + LORA
  training code: sigLIP2_lora/lora.ipynb
  trained checkpoints: https://drive.google.com/file/d/1PZBBI0K0H1EyyTvjmD_ZscLOYllwp01I/view?usp=sharing
 
