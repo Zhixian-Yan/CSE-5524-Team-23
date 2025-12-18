@@ -16,10 +16,26 @@ We provide several validation images under:
 Tile_inference.ipynb to see the plantCLEF 2025 quandrat prediction
 
 ## Other model trained:
-### 1. infer using original BioClip-2 model
- download txt_emb_species.npy and txt_emb_species.json (from imageomics/TreeOfLife-200M) <https://huggingface.co/datasets/imageomics/TreeOfLife-200M/tree/main/embeddings>
- put them in the same folder.
- code: other_experiments/infer_bioclip.ipynb
+### 1. BioCLIP-2 + LoRA Fine-tuning
+LoRA (Low-Rank Adaptation) fine-tuning on [BioCLIP 2](https://huggingface.co/imageomics/bioclip-2) for biological organism classification.
+
+**Key Features:**
+- Trainable parameters: ~3M (vs ~430M total)
+- LoRA rank: 8, alpha: 16.0
+- Applied to both vision (ViT-L/14) and text encoders
+
+**Quick Start:**
+```bash
+cd bioclip-2
+conda env create -f requirements-training.yml
+conda activate bioclip-train
+bash train_with_your_data.sh
+```
+
+**Training Results:** Initial Loss ~6.0 → Final Loss ~2.09 (65% reduction)
+
+For detailed documentation, see [bioclip-2/README.md](bioclip-2/README.md)
+
 ### 2. SigLIP2 + MLP probing
  training code: sigLIP2_mlp/finetune_sigCLIP2.ipynb
  trained checkpoints: <https://drive.google.com/file/d/1zuLxk9dsFKf10aijMNFi2PCHAs0uTcim/view?usp=sharing>
