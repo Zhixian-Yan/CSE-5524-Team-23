@@ -1,7 +1,7 @@
 # Final Project – PlantCLEF 2025 Team-23
 
 ### 1. Final method: Task-aware Prediction Filtering
- in Task-aware Prediction Filtering folder
+ **Location**: `Task-aware Prediction Filtering/` 
  
 ## Installation
 - Python 3.11
