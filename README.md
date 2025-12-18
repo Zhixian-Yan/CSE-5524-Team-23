@@ -1,23 +1,32 @@
 # Final Project – PlantCLEF 2025 Team-23
 
 ### 1. Final method: Task-aware Prediction Filtering
+
  **Location**: `Task-aware Prediction Filtering/` 
  
 **Installation:** 
+
 - Python 3.11
 - pip install -r requirements.txt
 
 **Pretrained Model:** 
-Download the pretrained model <https://drive.google.com/file/d/15Yxi9vovUxo4YUMWYcO2k3JqzFPQgEBm/view?usp=sharing> and PlantCLEF2024_single_plant_training_metadata.csv <https://drive.google.com/file/d/1z3gx4W6Vj9iK0V-o5pS96rcIZeBShuPX/view?usp=sharing> 
+
+Download the pretrained model <https://drive.google.com/file/d/15Yxi9vovUxo4YUMWYcO2k3JqzFPQgEBm/view?usp=sharing> and 
+
+PlantCLEF2024_single_plant_training_metadata.csv <https://drive.google.com/file/d/1z3gx4W6Vj9iK0V-o5pS96rcIZeBShuPX/view?usp=sharing> 
 save them to folder `Task-aware Prediction Filtering/`.
 
 **Test Examples:**  
+
 We provide several validation images under:
 `Task-aware Prediction Filtering/test_imgs`
 
 **Run in jupyter notebook:**   
+
 Tile_inference.ipynb to see the plantCLEF 2025 quandrat prediction
+
 run enviroments: Linux (Ubuntu 24.04) nvidia-driver 580 cuda 13.0
+
 ## Other model trained:
 ### 2. BioCLIP-2 + LoRA Fine-tuning
 
