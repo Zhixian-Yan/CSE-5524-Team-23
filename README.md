@@ -1,12 +1,15 @@
 # Final Project – PlantCLEF 2025 Team-23
 
+### 1. Final method: Task-aware Prediction Filtering
+ in Task-aware Prediction Filtering folder
+ 
 ## Installation
 - Python 3.11
 - pip install -r requirements.txt
 
 ## Pretrained Model
 Download the pretrained model <https://drive.google.com/file/d/15Yxi9vovUxo4YUMWYcO2k3JqzFPQgEBm/view?usp=sharing> and PlantCLEF2024_single_plant_training_metadata.csv <https://drive.google.com/file/d/1z3gx4W6Vj9iK0V-o5pS96rcIZeBShuPX/view?usp=sharing> 
-save them to this folder.
+save them to folder "Task-aware Prediction Filtering".
 
 ## Test Examples
 We provide several validation images under:
@@ -16,7 +19,7 @@ We provide several validation images under:
 Tile_inference.ipynb to see the plantCLEF 2025 quandrat prediction
 
 ## Other model trained:
-### 1. BioCLIP-2 + LoRA Fine-tuning
+### 2. BioCLIP-2 + LoRA Fine-tuning
 
 **Location**: `bioclip-2/`
 
@@ -70,13 +73,13 @@ python infer_dinov2_head.py \
 
 For detailed documentation, see [`DINOv2-linear-mlp/README.md`](DINOv2-linear-mlp/README.md).
 
-### 3. SigLIP2 + MLP probing
+### 4. SigLIP2 + MLP probing
 
 **Location**: `sigLIP2_mlp/`
 
  training code: sigLIP2_mlp/finetune_sigCLIP2.ipynb
  trained checkpoints: <https://drive.google.com/file/d/1zuLxk9dsFKf10aijMNFi2PCHAs0uTcim/view?usp=sharing>
-### 4. SigLIP2 + LORA
+### 5. SigLIP2 + LORA
 
 **Location**: `sigLIP2_lora/`
 
