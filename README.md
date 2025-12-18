@@ -11,7 +11,6 @@ This project demonstrates **LoRA (Low-Rank Adaptation)** fine-tuning on [BioCLIP
 5. [Evaluation](#evaluation)
 6. [Results](#results)
 7. [Project Structure](#project-structure)
-8. [Citation](#citation)
 
 ---
 
@@ -313,7 +312,3 @@ bioclip-2/
 ```
 
 ---
-
-## License
-
-This project is released under the MIT License. See [LICENSE](LICENSE) for details.
