@@ -42,7 +42,7 @@ bash train_with_your_data.sh
 
 For detailed documentation, see [bioclip-2/README.md](bioclip-2/README.md)
 
-### 2. DINOv2 + Linear/MLP Classification
+### 3. DINOv2 + Linear/MLP Classification
 
 **Location**: `DINOv2-linear-mlp/`
 
