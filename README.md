@@ -68,9 +68,15 @@ python infer_dinov2_head.py \
 For detailed documentation, see [`DINOv2-linear-mlp/README.md`](DINOv2-linear-mlp/README.md).
 
 ### 3. SigLIP2 + MLP probing
+
+**Location**: `sigLIP2_mlp/`
+
  training code: sigLIP2_mlp/finetune_sigCLIP2.ipynb
  trained checkpoints: <https://drive.google.com/file/d/1zuLxk9dsFKf10aijMNFi2PCHAs0uTcim/view?usp=sharing>
 ### 4. SigLIP2 + LORA
+
+**Location**: `sigLIP2_lora/`
+
  training code: sigLIP2_lora/lora.ipynb
  trained checkpoints: https://drive.google.com/file/d/1PZBBI0K0H1EyyTvjmD_ZscLOYllwp01I/view?usp=sharing
 
