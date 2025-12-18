@@ -246,6 +246,19 @@ Both heads were trained for 5 epochs and evaluated on a held-out validation set.
    - CSV format, must contain `species_id` column
    - Used to map predicted class indices to actual species IDs
 
+### Model Downloads
+
+The model files are stored using Git LFS in this repository. If you encounter issues downloading from GitHub (e.g., Git LFS quota exceeded), you can download the models directly from Google Drive:
+
+- **DINOv2 Backbone Checkpoint** (`model_best.pth.tar`): [Download from Google Drive](https://drive.google.com/file/d/1FSI1YFiub6rrEfV9cruGdgWFBAyrbsm5/view?usp=sharing)
+- **Linear Head** (`dino_linear_head.pth`): [Download from Google Drive](https://drive.google.com/file/d/1tNieT3O7WUsXRFA9r4bGndvzGnEhdjeL/view?usp=sharing)
+- **MLP Head** (`dino_mlp_head.pth`): [Download from Google Drive](https://drive.google.com/file/d/1-F6FjfVUxikmlmU6zD0RxF5SXr6gMAVA/view?usp=sharing)
+
+**Note**: After downloading from Google Drive, place the files in the corresponding directories:
+- `model_best.pth.tar` → `DINOv2/checkpoint/`
+- `dino_linear_head.pth` → `outputs/`
+- `dino_mlp_head.pth` → `outputs/`
+
 ## Notes
 
 1. Ensure all required files exist and paths are correct
