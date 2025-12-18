@@ -17,7 +17,7 @@ We provide several validation images under:
 
 **Run in jupyter notebook:**   
 Tile_inference.ipynb to see the plantCLEF 2025 quandrat prediction
-
+run enviroments: Linux (Ubuntu 24.04) nvidia-driver 580 cuda 13.0
 ## Other model trained:
 ### 2. BioCLIP-2 + LoRA Fine-tuning
 
