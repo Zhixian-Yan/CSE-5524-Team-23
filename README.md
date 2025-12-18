@@ -20,10 +20,10 @@ Tile_inference.ipynb to see the plantCLEF 2025 quandrat prediction
  download txt_emb_species.npy and txt_emb_species.json (from imageomics/TreeOfLife-200M) <https://huggingface.co/datasets/imageomics/TreeOfLife-200M/tree/main/embeddings>
  put them in the same folder.
  code: other_experiments/infer_bioclip.ipynb
-### 1. SigLIP2 + MLP probing
+### 2. SigLIP2 + MLP probing
  training code: sigLIP2_mlp/finetune_sigCLIP2.ipynb
  trained checkpoints: <https://drive.google.com/file/d/1zuLxk9dsFKf10aijMNFi2PCHAs0uTcim/view?usp=sharing>
-### 2. SigLIP2 + LORA
+### 3. SigLIP2 + LORA
  training code: sigLIP2_lora/lora.ipynb
  trained checkpoints: https://drive.google.com/file/d/1PZBBI0K0H1EyyTvjmD_ZscLOYllwp01I/view?usp=sharing
 
